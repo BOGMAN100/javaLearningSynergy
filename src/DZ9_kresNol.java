@@ -51,7 +51,7 @@ public class DZ9_kresNol {
                 }
                 turn++;
             } else {
-                System.out.print("Эту ячейку выбрать нельзя");
+                System.out.println("Эту ячейку выбрать нельзя");
             }
 
         } else {
@@ -73,7 +73,7 @@ public class DZ9_kresNol {
                 elements[0].equals(elements[1]) && elements[1].equals(elements[2]) && elements[2].equals(X) ||
                         elements[3].equals(elements[4]) && elements[4].equals(elements[5]) && elements[5].equals(X) ||     // линии Х
                         elements[6].equals(elements[7]) && elements[7].equals(elements[8]) && elements[8].equals(X) ||
-                        elements[0].equals(elements[3]) && elements[3].equals(elements[6]) && elements[5].equals(X) ||
+                        elements[0].equals(elements[3]) && elements[3].equals(elements[6]) && elements[6].equals(X) ||
                         elements[1].equals(elements[4]) && elements[4].equals(elements[7]) && elements[7].equals(X) ||     // колонны Х
                         elements[2].equals(elements[5]) && elements[5].equals(elements[8]) && elements[8].equals(X) ||
                         elements[0].equals(elements[4]) && elements[4].equals(elements[8]) && elements[8].equals(X) ||
@@ -87,7 +87,7 @@ public class DZ9_kresNol {
                 elements[0].equals(elements[1]) && elements[1].equals(elements[2]) && elements[2].equals(O) ||
                         elements[3].equals(elements[4]) && elements[4].equals(elements[5]) && elements[5].equals(O) ||     // линии 0
                         elements[6].equals(elements[7]) && elements[7].equals(elements[8]) && elements[8].equals(O) ||
-                        elements[0].equals(elements[3]) && elements[3].equals(elements[6]) && elements[5].equals(O) ||
+                        elements[0].equals(elements[3]) && elements[3].equals(elements[6]) && elements[6].equals(O) ||
                         elements[1].equals(elements[4]) && elements[4].equals(elements[7]) && elements[7].equals(O) ||     // колонны 0
                         elements[2].equals(elements[5]) && elements[5].equals(elements[8]) && elements[8].equals(O) ||
                         elements[0].equals(elements[4]) && elements[4].equals(elements[8]) && elements[8].equals(O) ||
