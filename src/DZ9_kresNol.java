@@ -42,13 +42,18 @@ public class DZ9_kresNol {
         System.out.print("Choose col: ");
         int col = scan.nextInt() - 1;
 //        scan.close();
-        if (area[row][col].equals("[ ]") && col < 3 && row < 3) {
-            if (turn % 2 == 0)
-                area[row][col] = "[X]";
-            else if (turn % 2 == 1) {
-                area[row][col] = "[0]";
+        if (col < 3 && row < 3) {
+            if (area[row][col].equals("[ ]")) {
+                if (turn % 2 == 0)
+                    area[row][col] = "[X]";
+                else if (turn % 2 == 1) {
+                    area[row][col] = "[0]";
+                }
+                turn++;
+            } else {
+                System.out.print("Эту ячейку выбрать нельзя");
             }
-            turn++;
+
         } else {
             System.out.print("Эту ячейку выбрать нельзя");
         }
