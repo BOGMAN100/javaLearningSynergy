@@ -42,7 +42,7 @@ public class DZ9_kresNol {
         System.out.print("Choose col: ");
         int col = scan.nextInt() - 1;
 //        scan.close();
-        if (col < 3 && row < 3) {
+        if (col < 3 && col >=0 && row >=0 && row < 3) {
             if (area[row][col].equals("[ ]")) {
                 if (turn % 2 == 0)
                     area[row][col] = "[X]";
@@ -53,7 +53,6 @@ public class DZ9_kresNol {
             } else {
                 System.out.println("Эту ячейку выбрать нельзя");
             }
-
         } else {
             System.out.print("Эту ячейку выбрать нельзя");
         }
